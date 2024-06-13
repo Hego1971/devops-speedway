@@ -1,0 +1,14 @@
+Resources:
+   myInstance1:
+     Type: 'AWS::EC2::Instance'
+     Properties: 
+        ImageId: ami-08a0d1e16fc3f61ea
+        InstanceType: t2.micro
+        KeyName: "maccess"
+        SubnetId: subnet-01b4410840cbaec87
+        SecurityGroupIds:
+          - sg-0486f08458887bf50
+   ElasticIP: 
+     Type: AWS::EC2::EIP
+     Properties:
+       InstanceId: !Ref myInstance1
