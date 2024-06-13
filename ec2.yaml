@@ -2,8 +2,8 @@ Resources:
    myInstance1:
      Type: 'AWS::EC2::Instance'
      Properties: 
-        ImageId: ami-08a0d1e16fc3f61ea
-        InstanceType: t2.micro
+        ImageId: ami-04b70fa74e45c3917
+        InstanceType: t3.micro
         KeyName: "maccess"
         SubnetId: subnet-01b4410840cbaec87
         SecurityGroupIds:
